@@ -1,4 +1,5 @@
 import React, { use } from 'react'
+import Country from '../Country/Country';
 
 const Countries = ({ fetchCountries }) => {
 
@@ -6,9 +7,14 @@ const Countries = ({ fetchCountries }) => {
   console.log(data[0].name.common);
   return (
     <>
-      {
-        data.map(country =><div className='card'><country country={country}/></div>)
-      }
+    <div className='grid'>
+
+      {data.map((country, idx) => (
+        <div key={idx} className="card">
+          <Country country={country} />
+        </div>
+      ))}
+    </div>
     </>
   );
 };

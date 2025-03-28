@@ -39,6 +39,12 @@
   border-radius: 8px;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 .read-the-docs {
   color: #888;
 }
