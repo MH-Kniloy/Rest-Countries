@@ -44,7 +44,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
+.bg-color{
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
 .read-the-docs {
   color: #888;
 }

@@ -9,7 +9,9 @@ const Country = ({ country, handleVisited, visited, handleNotVisited }) => {
       <p>{country.landlocked ? "No ocean" : "has Beautiful ocean"}</p>
       <p>Independent : {country.independent ? "Free" : "Not free"}</p>
       {visited.includes(country.name.common) ? (
-        <button onClick={() => handleNotVisited(country)}>Visited</button>
+        <button className="bg-color" onClick={() => handleNotVisited(country)}>
+          Visited
+        </button>
       ) : (
         <button onClick={() => handleVisited(country)}>Not Visited</button>
       )}

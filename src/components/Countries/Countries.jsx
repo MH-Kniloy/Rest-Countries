@@ -20,6 +20,12 @@ const Countries = ({ fetchCountries }) => {
   return (
     <>
       <h1>Total Visited countries : {visited.length} </h1>
+      <h2>
+        Visited Countries names:
+        {visited.map((visit) => (
+          <h6>{visit}</h6>
+        ))}
+      </h2>
       <div className="grid">
         {data.map((country, idx) => (
           <div key={idx} className="card">
